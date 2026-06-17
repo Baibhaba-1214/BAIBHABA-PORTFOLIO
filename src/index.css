@@ -1,0 +1,27 @@
+:root {
+  --bg-color: #ffffff;
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --accent-color: #000000;
+  --border-color: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Ensure all cards look clean */
+.card {
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 0px; /* Sharp corners are very minimalist */
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent-color);
+}
